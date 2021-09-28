@@ -1,0 +1,744 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: yekanbakh;
+  background: #f5f8fa;
+}
+
+/* .container {
+  max-width: 1702px;
+  margin: 0 auto;
+} */
+
+.top-coupon__header {
+  background-image: url("https://www.alinland.com/media/pattern2.png");
+  width: 100%;
+  padding: 10px 0;
+  background-position: center;
+}
+
+.top-coupon__align {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-coupon__title--area {
+  display: flex;
+  align-items: center;
+}
+
+.top-coupon__title {
+  display: flex;
+  font-size: 20px;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.close-coupon {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.top-coupon__area {
+  font-size: 16.5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.top-coupon__area::after {
+  content: url("https://www.alinland.com/media/coupon.png");
+  position: absolute;
+  left: -7px;
+  top: -1px;
+}
+
+.top-coupon__area p {
+  padding: 8px 20px;
+  border: 1px dotted;
+  border-left: none;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.coupon {
+  color: #425b76;
+  font-weight: bold;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  height: 48px;
+  padding: 0 30px;
+  position: relative;
+  overflow-y: clip;
+}
+
+.coupon__shape {
+  width: 25px;
+  height: 70px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: -5px;
+}
+
+.copy-coupon {
+  display: flex;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.coupon__clipboard {
+  display: flex;
+  height: 24px;
+}
+
+@media only screen and (max-width: 575.98px) {
+  .top-coupon__header {
+    /* height: 60px; */
+    padding: 15px 0px;
+    /* justify-content: space-between; */
+    /* flex-direction: column; */
+  }
+
+  .coupon {
+    overflow-y: hidden;
+  }
+  .close-coupon {
+    margin-left: 5px;
+    margin-right: 0;
+  }
+
+  .top-coupon__area {
+    margin-left: 12px;
+  }
+
+  .top-coupon__area p {
+    padding: 14px 10px;
+    border: 1px dotted;
+    border-left: none;
+    margin-bottom: 0;
+    font-size: 10px;
+    white-space: nowrap;
+    width: 270px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .coupon {
+    padding: 0 10px;
+  }
+  .coupon__shape {
+    width: 15px;
+  }
+  .top-coupon__title {
+    display: none;
+  }
+}
+
+.page-header {
+  display: none;
+}
+
+.footer-minicart {
+  display: none;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+/*** Header Section ***/
+
+.alinland__header {
+  padding: 21px 0;
+  background: #fff;
+  box-shadow: 0 1.5px 3px 0 rgba(171, 161, 161, 0.16);
+}
+.advanced-label {
+  display: none;
+}
+
+.alinland__header--group {
+  display: flex;
+}
+
+.actions {
+  display: flex;
+}
+
+.alinland__header--logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.alinland__header--search-area {
+  display: flex;
+  border: 1px solid #99acc2;
+  padding: 5px;
+  border-radius: 10px;
+  align-items: stretch;
+  margin: 0 30px;
+  background: #fff;
+}
+
+.alinland__header--search-area input {
+  width: 500px;
+  height: 30px;
+  border: none;
+  outline: none;
+  order: 2;
+  padding: 0 5px;
+}
+
+.alinland__header--search-area button {
+  margin: 0;
+  border: none;
+  background: none;
+  padding: 0 5px;
+}
+
+.alinland__header--search-area button:hover {
+  cursor: pointer;
+}
+
+.alinlnad__header--register-btn {
+  color: #494f55;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 8px 20px;
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.alinland__header--acount-area {
+  display: flex;
+  align-items: center;
+}
+
+.alinland__header--login-btn {
+  background-color: #ed7203;
+  color: #fff !important;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  height: 49px;
+  white-space: nowrap;
+}
+
+.alinshops__btn {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  color: #494f55 !important;
+  font-size: 15px;
+  height: 49px;
+  text-decoration: none;
+}
+
+.alinshops__btn span {
+  margin-left: 5px;
+}
+
+.alinland__header--login-btn span {
+  margin-left: 5px;
+  display: flex;
+}
+
+body input[type="text"],
+body input[type="password"],
+body input[type="url"],
+body input[type="tel"],
+body input[type="search"],
+body input[type="number"],
+body input[type="datetime"],
+body input[type="email"] {
+  color: #9c9c9c;
+  border-color: #e1e1e1;
+  background: transparent;
+  font: 400 12px/1.35 Rajdhani, Helvetica Neue, Verdana, Arial, sans-serif;
+  height: 35px;
+  line-height: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+  outline: none;
+  background-clip: padding-box;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  border-width: 1px;
+  border-radius: 2px;
+}
+body input[type="text"],
+body input[type="password"],
+body input[type="url"],
+body input[type="tel"],
+body input[type="search"],
+body input[type="number"],
+body input[type="datetime"],
+body input[type="email"] {
+  font-family: yekanbakh !important;
+}
+
+@media (max-width: 575.98px) {
+  .top-coupon__align {
+    justify-content: center;
+  }
+
+  .mobile--view--alinshops {
+    padding: 20px 10px;
+  }
+  .alinland__header--search-area input {
+    width: auto;
+  }
+
+  .alinland__logo {
+    width: 90px;
+  }
+
+  .desktop--view--alinshops {
+    display: none;
+  }
+
+  .header__container {
+    justify-content: center;
+    align-items: initial;
+    flex-direction: column;
+  }
+
+  .alinshops__btn {
+    margin-left: 15px;
+    font-size: 12px;
+    height: 40px;
+    white-space: nowrap;
+  }
+
+  .alinland__header--search-area {
+    margin: 0;
+  }
+
+  .alinland__header--search-area input {
+    width: 300px;
+  }
+
+  .alinland__header--login-btn {
+    padding: 2px 9px;
+    font-size: 11px;
+    height: 40px;
+  }
+
+  .alinland__header--group {
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width:575.98px) and (max-width: 991px) {
+  .desktop--view--alinshops {
+    display: none;
+  }
+
+.alinlnad__error-container {
+    flex-direction: column;
+}
+
+.header__container {
+  flex-wrap: wrap;
+}
+
+.alinland__error-img {
+  width: 500px;
+}
+
+.alinland__header--search-area {
+  margin: 0;
+  margin-top: 20px;
+}
+
+.alinland__header--search-areaa {
+  width: 100%;
+}
+
+.alinland__header--group {
+  width: 100%;
+  justify-content: space-between;
+}
+
+}
+
+@media only screen and (min-width:991px) and (max-width: 1258px) {
+ .alinlnad__error-container {
+   flex-direction: column;
+ }
+}
+
+@media only screen and (min-width: 991px) {
+  .mobile--view--alinshops {
+    display: none;
+  }
+}
+
+.alinland__error--section {
+  padding: 40px 0;
+}
+
+.alinlnad__error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alinlnad__error-container img {
+    order: 2;
+}
+
+.error__cta-title {
+  font-size: 40px;
+  color: #494f55;
+  font-weight: bold;
+}
+
+
+.alinland__error-cta {
+    order: 1;
+}
+
+.alinland__error-cta span {
+  display: block;
+  font-weight: bold;
+  color: #99acc2;
+  margin-bottom: 35px;
+}
+
+.alinland__error-cta a { 
+  font-size: 20px;  
+  text-decoration: none;
+  color: #ed7203;
+  border: 1px solid #ed7203;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-weight: bold;
+  transition: all .3s;
+}
+
+.alinland__error-cta a:hover { 
+    background-color: #ed7203;
+    color: #fff;
+ 
+  }
+
+  @media only screen and (max-width: 576px) {
+    .alinlnad__error-container {
+      flex-direction: column;
+    }
+
+    .alinland__error-img {
+        width: 100%;
+        padding: 10px 25px;
+    }
+  }
+
+/** Footer Alincub **/
+
+.alinshops__footer--section {
+  background: #fff;
+  padding: 0 15px;
+}
+
+.footer__feature-inner-box-container {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #dcdfe1;
+  padding: 20px 0;
+}
+
+.footer__feature-inner-box-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  width: 152px;
+}
+
+.footer__feature-inner-box-item h4 {
+  color: #878c92;
+  font-size: 15px;
+}
+
+.footer__feature-inner-box-item:hover .feature-inner--icon {
+  background-color: #ed7203;
+}
+
+.footer__feature-inner-box-item .feature-inner--icon {
+  width: 80px;
+  height: 80px;
+  background-color: #f5f8fa;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__feature-inner-box-item:hover .feature-inner--icon svg g g path {
+  fill: #fff;
+}
+
+.footer__coloumns--group {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  border-bottom: 1px solid #dcdfe1;
+}
+
+.footer__column-container ul {
+  list-style: none;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.footer__column-container ul li a {
+  text-decoration: none;
+  color: #878c92;
+  font-size: 15px;
+}
+
+.footer__column-container ul li:hover a {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.footer__column--title {
+  font-weight: bold;
+  margin-bottom: 14px;
+  color: #494f55;
+  font-size: 16px;
+}
+
+.footer__column--title span {
+  display: none;
+}
+
+.footer__column--item {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #878c92;
+}
+
+.footer__scoial-media--title {
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  color: #494f55;
+  font-size: 16px;
+}
+
+ul.social-media--items {
+  padding-right: 0;
+}
+
+.social-media--items li {
+  display: inline-block;
+  margin-left: 35px;
+}
+
+.social-media-area {
+  display: flex;
+}
+
+.social-media__group input {
+  width: 300px;
+  border: 1px solid #dcdfe1;
+  padding: 10px 15px;
+  font-family: inherit;
+  outline: none;
+  border-radius: 10px;
+}
+
+.social-media__group button {
+  width: 120px;
+  background: #878c92;
+  border: none;
+  color: #fff;
+  margin-right: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.social-media__group button:hover {
+  background: #ed7203;
+}
+.footer__seo--section {
+  width: 750px;
+}
+
+.footer__seo--section h2 {
+  font-size: 18px;
+  color: #494f55;
+}
+
+.footer__seo--section p {
+  text-align: justify;
+  line-height: 2.3;
+  color: #878c92;
+  font-size: 15px;
+}
+
+.footer__about-alinland {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px 0;
+}
+
+.footer__trust--symbols {
+  display: flex;
+  align-items: center;
+}
+
+.footer__trust--symbol {
+  margin-right: 30px;
+}
+
+.footer__trust--symbol a img {
+  width: 150px;
+}
+
+#more {
+  display: none;
+}
+
+#myBtn {
+  cursor: pointer;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#myBtn::after {
+  content: ">";
+  margin-right: 10px;
+}
+
+.spin {
+  font-size: 32px;
+}
+
+.shops-footer-content-bottom {
+  background: #f5f8fa;
+  padding: 20px 0 15px;
+}
+
+.footer__scoial-media--title-area {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 575.98px) {
+  .footer__feature-inner-box-container {
+    display: none;
+  }
+
+  .footer__about-alinland {
+    flex-direction: column;
+  }
+
+  .footer__seo--section {
+    width: auto;
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+
+  .footer__coloumns--group {
+    flex-direction: column;
+  }
+
+  .rtl-layout .mb-bottom-toolbar {
+    display: none;
+  }
+
+  .footer__column--title span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__column--title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dcdfe1;
+    padding-bottom: 10px;
+  }
+
+  #footer__column--icon-one-open {
+    display: none;
+  }
+  #footer__column--icon-two-open {
+    display: none;
+  }
+  #footer__column--icon-three-open {
+    display: none;
+  }
+
+  #footer__column--one {
+    display: none;
+  }
+  #footer__column--two {
+    display: none;
+  }
+  #footer__column--three {
+    display: none;
+  }
+
+  .footer__scoial-media--title-area {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social-media--items {
+    margin-bottom: 0;
+  }
+
+  .social-media--items li {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .page-footer {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1199.98px) {
+  .social-media__group input {
+    width: auto;
+  }
+
+  .social-media__group button {
+    width: auto;
+  }
+
+  .footer__coloumns--group {
+    padding: 40px 20px;
+  }
+}
